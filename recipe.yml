@@ -13,7 +13,16 @@ modules:
   - lpkg --unlock
   - apt-get update
 
-# Put your custom actions behind this comment
+# BEGIN custom actions
+
+- name: liquorix-kernel
+  type: shell
+  commands:
+  - apt-get update
+  - apt-get install -y curl lsb-release apt-transport-https
+  - curl -s 'https://liquorix.net/install-liquorix.sh' | bash
+  - apt-get update
+  - apt-get install -y linux-image-liquorix-amd64 linux-headers-liquorix-amd64
 
 - name: onedriver
   type: shell
@@ -23,7 +32,7 @@ modules:
   - apt-get update
   - apt-get install -y onedriver
 
-# Put your custom actions before this comment
+# END custom actions
 
 - name: set-image-name-abroot
   type: includes
