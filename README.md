@@ -13,7 +13,7 @@ Execute the following command in the `vso-pico` shell:
 host-shell pkexec sed -i.old 's/vanilla-os\/desktop/dumbmahreeo\/custom/g' /etc/abroot/abroot.json
 ```
 
-# Uninstall (back to stock image)
+## Uninstall (back to stock image)
 
 Execute this other command:
 ```bash
