@@ -11,7 +11,7 @@ chmod 0644 "$keyring_path"
 apt-get install apt-transport-https -y
 
 repo_file="/etc/apt/sources.list.d/liquorix.list"
-repo_code="$1"
+repo_code="testing"
 repo_line="[arch=amd64 signed-by=$keyring_path] https://liquorix.net/debian $repo_code main"
 echo "deb $repo_line"      > $repo_file
 echo "deb-src $repo_line" >> $repo_file
