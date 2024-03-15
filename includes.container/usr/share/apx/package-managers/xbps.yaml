@@ -1,0 +1,18 @@
+
+apx pkgmanagers new -y -a 'xbps-remove --remove-orphans' -c 'xbps-remove --clean-cache' -l 'xbps-query -l' -i 'xbps-install' -n 'xbps' -S -p 'xbps-remove --recursive' -r 'xbps-remove' -s 'xbps-query --repository -s' -w 'xbps-query' -u 'xbps-install --sync' -U 'xbps-install --update'
+
+cat: vos-image/: È una directory
+name: xbps
+model: 2
+needsudo: true
+cmdautoremove: xbps-remove --remove-orphans
+cmdclean: xbps-remove --clean-cache
+cmdinstall: xbps-install
+cmdlist: xbps-query -l
+cmdpurge: xbps-remove --recursive
+cmdremove: xbps-remove
+cmdsearch: xbps-query --repository
+cmdshow: xbps-query
+cmdupdate: xbps-install --sync
+cmdupgrade: xbps-install --update
+builtin: true

@@ -28,12 +28,6 @@ modules:
   - apt-get update
   - apt-get install -y onedriver
 
-- name: apx-void
-  type: shell
-  commands:
-  - apx pkgmanagers new -y -a 'xbps-remove --remove-orphans' -c 'xbps-remove --clean-cache' -l 'xbps-query -l' -i 'xbps-install' -n 'xbps' -S -p 'xbps-remove --recursive' -r 'xbps-remove' -s 'xbps-query --repository -s' -w 'xbps-query' -u 'xbps-install --sync' -U 'xbps-install --update'
-  - apx stacks new -n void-glibc -b ghcr.io/void-linux/void-glibc-full:latest -k xbps -y
-
 # END custom actions
 
 - name: set-image-name-abroot
