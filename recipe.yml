@@ -26,6 +26,11 @@ modules:
   - echo 'deb http://download.opensuse.org/repositories/home:/jstaf/Debian_Unstable/ /' | tee /etc/apt/sources.list.d/home:jstaf.list
   - curl -fsSL https://download.opensuse.org/repositories/home:jstaf/Debian_Unstable/Release.key | gpg --dearmor | tee /etc/apt/trusted.gpg.d/home_jstaf.gpg > /dev/null
 
+- name: vso-console-fix
+  type: shell
+  commands:
+  - echo "exec sleep 0.5 " >> /usr/bin/vso-os-shell
+
 # END custom actions
 
 - name: set-image-name-abroot
