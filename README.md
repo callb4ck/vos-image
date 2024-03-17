@@ -12,7 +12,7 @@ This image differs from stock in the following ways:
 
 Execute the following command in the `vso-pico` shell:
 ```bash
-host-shell pkexec sh -c "sed -i.old 's/vanilla-os\/desktop/dumbmahreeo\/custom/g' /etc/abroot/abroot.json && abroot upgrade"
+host-shell pkexec sh -c "sed -i.old 's/vanilla-os\/desktop/dumbmahreeo\/vos-image/g' /etc/abroot/abroot.json && abroot upgrade"
 ```
 
 ## Uninstall (back to stock image)
