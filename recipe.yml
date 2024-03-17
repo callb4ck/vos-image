@@ -15,12 +15,6 @@ modules:
 
 # BEGIN custom actions
 
-- name: liquorix-kernel
-  type: shell
-  commands:
-  - sh /liquorix-script/install.sh
-  - rm -rf /liquorix-script
-
 - name: onedriver
   type: shell
   commands:
