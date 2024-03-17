@@ -3,9 +3,9 @@ This is a custom Vib image to be used by ABRoot on VanillaOS
 
 ## Features
 This image differs from stock in the following ways:
-- Liquorix kernel is preinstalled
 - Onedriver is preinstalled
-- Console not closing upon shell exit fixed
+- New apx stack `void-glibc` based on void linux
+- Console not closing upon shell exit, fixed
 
 # Usage
 ## Install
