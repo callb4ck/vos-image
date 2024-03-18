@@ -1,0 +1,17 @@
+#!/bin/sh
+
+netname='eduroam'
+
+[ -n "$1" ] && netname="$1"
+
+if ! command -v nmcli > /dev/null; then
+	echo "Install nmcli first"
+	exit 1
+fi
+
+if nmcli connection modify "$netname" 802-1x.phase1-auth-flags 32; then
+	echo "Enabled legacy/insecure authentication for $netname"
+else
+	echo "Try and connect to $netname first to generate the connection file. Then run this command again."
+	exit 2
+fi

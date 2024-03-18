@@ -6,6 +6,7 @@ This image differs from stock in the following ways:
 - Onedriver is preinstalled
 - New apx stack `void-glibc` based on void linux
 - Console not closing upon shell exit, fixed
+- Legacy eduroam/uni networks can now be enabled trough the `eduroam-fix` command in the `host-shell`
 
 # Usage
 ## Install
