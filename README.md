@@ -21,3 +21,4 @@ Execute this other command:
 ```bash
 host-shell pkexec sh -c "mv /etc/abroot/abroot.json.old /etc/abroot/abroot.json && abroot upgrade"
 ```
+ 
